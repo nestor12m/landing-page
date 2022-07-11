@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Poppins:wght@200;400;600;900&family=Roboto:ital,wght@0,400;0,700;1,100;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Open+Sans&family=Poppins:wght@200;400;600;900&family=Roboto:ital,wght@0,400;0,700;1,100;1,300;1,900&display=swap');
+:root{
+--Violet: hsl(257, 40%, 49%);
+--SoftMagenta: hsl(300, 69%, 71%);
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Violet);
+    background-image: url(../img/bg-desktop.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Open Sans;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgfooter img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+.contenedor-principal{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-seg-1 img{
+    width: 160px;
+    height: 40px;
+    margin-left: -170px;
+    margin-top: 30px;
+    
+}
+
+.contenedor-seg-2 img{
+    width: 320px;
+    height: 250px;
+    margin-top:35px;
+   
+
+}
+
+
+/* ------------------------------------------------------------------------------
+                        segunda seccion
+    ------------------------------------------------------------------------------ */
+.contenedor-segundario{
+    height: 350px;
+    width: 400px;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor-segundario h1{
+   color:white;
+   text-align: center;
+   font-size: 28px;
+   margin-left: 39px;
+   margin-right: 39px;
+}
+.contenedor-segundario p{
+    color:white;
+    text-align: center;
+    font-size:18px ;
+    line-height: 30px;
+    margin-left: 29px;
+    margin-right: 29px;
+ }
+ .boton{
+    padding: 13px 38px;
+    width: 60%;
+    border-radius: 20px;
+    color: var(--Violet);
+ }
+
+/* ------------------------------------------------------------------------------
+                        tercera seccion
+    ------------------------------------------------------------------------------ */
+ .imgfooter{
+  height: 70px;
+  width: 400px;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+ }
+ .imgfooter img{
+    margin-left: 5px;
+   
+ }
+ .pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+ }
+
+ 
+/* ------------------------------------------------------------------------------
+                        media queris
+    ------------------------------------------------------------------------------ */
+
+    @media(min-width:1150px){
+     main{
+        width: 90%;
+        margin: 50px auto;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1,100px;
+     }
+     .contenedor-principal{
+     grid-row: 1/2;
+     grid-column: 1/2;
+     }
+     .contenedor-seg-2 img{
+        width: 490px;
+        height: 350px;
+        margin-left: 160px;
+
+       
+    
+    }
+
+    .contenedor-segundario{
+
+        margin-left: 30px;
+        width: 500px;
+        align-items: flex-start;
+    }
+
+    .contenedor-segundario h1{
+        color:white;
+        text-align: start;
+        font-size: 28px;
+        margin-left: 10px;
+        margin-right:   150px;
+     }
+     .contenedor-segundario p{
+         color:white;
+         text-align: start;
+         font-size:18px ;
+         line-height: 30px;
+         margin-left: 10px;
+         margin-right: 10px;
+      }
+      .boton{
+        padding: 13px 38px;
+        width: 35%;
+        border-radius: 30px;
+        color: var(--Violet);
+     }
+      .imgfooter{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        justify-content: flex-end;
+        width: 90%;
+        
+      }
+    }
